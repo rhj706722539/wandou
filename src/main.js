@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+
+import wdConfirm from '@/components/confirm'
+import zsToast from '@/components/toast/index.js'
 /**
  * 外部样式
  */
@@ -17,6 +20,9 @@ import './config/reset.css'
 import './config/rem.js'
 
 Vue.config.productionTip = false
+
+Vue.component(wdConfirm.name, wdConfirm);
+Vue.prototype.$zsToast = zsToast.installMessage
 
 /* eslint-disable no-new */
 new Vue({
