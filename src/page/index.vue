@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style scoped lang="css">
+<style scoped lang="scss">
 .m-wrap-big {
     overflow: hidden;
 }
@@ -62,16 +62,16 @@ export default {
     line-height: 1.877rem;
     background: #fff;
     border-top: 1px solid #e6e6e6;
-}
-.footer li {
-    width: 25%;
-    float: left;
-    text-align: center;
-    color: #666;
-    font-size: 0.597rem;
-    border-right: 1px solid #666;
-}
-.footer .no-repost {
-    border-right: none
+    li {
+        width: 25%;
+        float: left;
+        text-align: center;
+        color: #666;
+        font-size: 0.597rem;
+        border-right: 1px solid #666;
+    }
+    .no-repost {
+        border-right: none
+    }
 }
 </style>
