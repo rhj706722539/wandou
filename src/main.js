@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import wdButton from '@/components/button'
 import wdConfirm from '@/components/confirm'
 import zsToast from '@/components/toast/index.js'
 /**
@@ -21,6 +22,7 @@ import './config/rem.js'
 
 Vue.config.productionTip = false
 
+Vue.component(wdButton.name, wdButton);
 Vue.component(wdConfirm.name, wdConfirm);
 Vue.prototype.$zsToast = zsToast.installMessage
 
