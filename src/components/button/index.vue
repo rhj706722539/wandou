@@ -12,7 +12,7 @@
  *  size 默认值为normal，可供选择的值为large,small
  */
 export default {
-  name: 'wd-button',
+  name: 'wdButton',
   props:{
     disabled:Boolean,
     
@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .wd-button {
     position: relative;
     padding: 0;
