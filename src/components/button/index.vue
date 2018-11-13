@@ -46,8 +46,27 @@ export default {
     box-sizing: border-box;
     font-size: 16px;
     text-align: center;
-    -webkit-appearance: none;
-    -webkit-text-size-adjust: 100%;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    outline:0;
+    text-decoration:none;
+    transition:all .2s ease;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    vertical-align:middle;
+    white-space:nowrap;
+}
+.wd-button:focus{
+    box-shadow:0 0 0 .1rem rgba(87,85,217,.2);
+}
+.wd-button:active {
+    color: #fff;
+    background-color: #D9D9D9;
+    border: 1px solid #eeeeee;
 }
 .default {
     color: #333;
@@ -56,13 +75,33 @@ export default {
 }
 .primary {
     color: #fff;
-    background-color: #00ce6d;
-    border: 1px solid #00ce6d;
+    background-color: #32b643;
+    border: 1px solid #2da23c;
+}
+.primary:hover {
+    color: #fff;
+    background-color: #30ae40;
+    border: 1px solid #2da23c;
+}
+.primary:active {
+    color: #fff;
+    background-color: #2a9a39;
+    border: 1px solid #278e34;
 }
 .danger {
     color: #fff;
-    background-color: #f55e36;
-    border: 1px solid #f55e36;
+    background-color: #e85600;
+    border: 1px solid #d95000;
+}
+.danger:hover {
+    color: #fff;
+    background-color: #de5200;
+    border: 1px solid #cf4d00;
+}
+.danger:active {
+    color: #fff;
+    background-color: #c44900;
+    border: 1px solid #b54300;
 }
 .normal {
     padding: 0 15px;
